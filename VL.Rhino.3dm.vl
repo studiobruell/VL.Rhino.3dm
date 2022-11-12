@@ -14826,7 +14826,7 @@
             <Pad Id="JzZCmxF6zjcNCJRcxgnrYC" SlotId="MtPWRsZjLDnNNMN98OP6d7" Bounds="2535,1567" />
             <Pad Id="MtjfuPWrPo6ME1dFDk58wG" SlotId="VCnUlg0w0WrPI880PzMbpf" Bounds="1793,1560" />
             <Pad Id="RO22OskcQG2N0FvpGQjklJ" SlotId="Ac8AJVWPNWxNqgv1xFSVXx" Bounds="1462,1568" />
-            <Pad Id="ChwNsCsWs22PriapGbTnb5" SlotId="Vn992JJulPMLVE5vqQbULU" Bounds="1264,1558" />
+            <Pad Id="ChwNsCsWs22PriapGbTnb5" SlotId="Vn992JJulPMLVE5vqQbULU" Bounds="1262,1571" />
             <ControlPoint Id="DdlQ69jZvyrQYlrScNQdwb" Bounds="1551,975" />
             <ControlPoint Id="V7PkpsytXB7Nr7nan33jyh" Bounds="553,598" />
             <Pad Id="Hi3ZJfAFOqqNp28ox8RwwB" SlotId="MB9SHhwbub5OU9pd9y1bCf" Bounds="553,519" Value="0" />
@@ -16460,6 +16460,15 @@
               <Pin Id="LgSrGG9xFfmNY4FeBi5vn8" Name="Input" Kind="StateInputPin" />
               <Pin Id="FYMSIzk0WwUQWjkMlgC9gH" Name="Exists" Kind="OutputPin" />
             </Node>
+            <Node Bounds="832,1753,67,19" Id="P4imAxHNw4LO27gncIuIoY">
+              <p:NodeReference LastCategoryFullName="Primitive.IDisposable" LastSymbolSource="VL.CoreLib.vl">
+                <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                <Choice Kind="OperationCallFlag" Name="TryDispose" />
+              </p:NodeReference>
+              <Pin Id="Hb2plGuVkatMJIguWCcaYC" Name="Input" Kind="StateInputPin" />
+              <Pin Id="NSyp9aKhwGBPZWbiBLv5YO" Name="Success" Kind="OutputPin" />
+            </Node>
+            <Pad Id="FzyJ28axMKXNueXbQi99s3" Bounds="876,1690" />
           </Canvas>
           <ProcessDefinition Id="E5eoIZ0puC8Nj5wJgKpy5m">
             <Fragment Id="DrdBmKQDehxMQsETZGFJhx" Patch="MGVvxnkamzEPMAoi5ExnWl" Enabled="true" />
@@ -16535,6 +16544,9 @@
           <Link Id="FNjwOeIMrbqLQC7mOGQOI1" Ids="MphmmsFfITxM6G2l0j9eFI,RuJyxngM4OGP7M65WtYBnS" />
           <Link Id="KQT42g8s0bJOhXHBRp41D0" Ids="CzafWXKmpAbOTSA08EFLeZ,BZqYhVP0xGnNALMrjTZUob" />
           <Link Id="A6VAFfyNWYIL0DWUPNbNTO" Ids="C7IeRaVcuuAOdA8CTpBC6q,BjmzwOVmEJmLMYZIwQ98As" />
+          <Patch Id="TDvzgrLSumXMLhw6bavzsQ" Name="Dispose" ParticipatingElements="P4imAxHNw4LO27gncIuIoY" />
+          <Link Id="LY7xouZ0AjgOmsrUDVb0vH" Ids="RuvfVQJzpxKO6doi8L2vxD,FzyJ28axMKXNueXbQi99s3" />
+          <Link Id="M5KNT2n5CloLXZntw4vvcr" Ids="FzyJ28axMKXNueXbQi99s3,Hb2plGuVkatMJIguWCcaYC" />
         </Patch>
       </Node>
       <!--
@@ -18158,6 +18170,6 @@
     </Node>
   </Patch>
   <NugetDependency Id="BZG0wb3qQqcM7tQUdipLIu" Location="VL.Stride" Version="2021.4.10" />
-  <NugetDependency Id="CXubKntkf96N781SJal9ii" Location="Rhino3dm" IsForward="true" Version="7.15.0" />
+  <NugetDependency Id="CXubKntkf96N781SJal9ii" Location="Rhino3dm" IsForward="true" Version="7.14.0" />
   <PlatformDependency Id="K6zKOuz09xoPxD93M7WU3p" Location="System.Collections.Specialized" />
 </Document>
