@@ -1,7 +1,6 @@
 # VL.Rhino.3dm
- VL Library to access and read McNeel Rhinoceros *.3dm Files.
 
-
+The Rhino.3dm Library for VL provides developers and modelers with a streamlined way to integrate Rhino3D geometry and data into their VL projects. With this library, developers can import Rhino3D files and access their geometry, materials, cameras and user data from objects directly within the programming environment.
 
 
 ## Using the library
@@ -9,6 +8,14 @@ In order to use this library with VL you have to install the nuget that is avail
 
     nuget install VL.Rhino.3dm
 
+https://www.nuget.org/packages/VL.Rhino.3dm
+
 
 Try it with vvvv, the visual live-programming environment for .NET  
 Download: http://visualprogramming.net
+
+
+Supported by:
+
+Jan Henrik Hansen Architects,
+Studio Brüll
